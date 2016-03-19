@@ -15,12 +15,12 @@ class CreateParticipantsTable extends Migration {
 		Schema::create('participants', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('name');
-			$table->string('lastName');
-			$table->enum('documentType',['CC','TI','CE']);
+			$table->string('first_name');
+			$table->string('last_name');
+			$table->enum('document_type',['CC','TI','CE']);
 			$table->integer('document');
 			$table->string('email');
-			$table->enum('type',['pro','est']);
+			$table->enum('type',['PRO','EST']);
 			$table->timestamps();
 		});
 	}

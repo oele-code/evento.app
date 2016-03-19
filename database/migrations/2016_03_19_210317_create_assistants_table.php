@@ -19,9 +19,9 @@ class CreateAssistantsTable extends Migration {
 			$table->foreign('participant_id')
       		->references('id')->on('participants')
       		->onDelete('cascade');
-      		$table->integer('dayOne');
-      		$table->integer('dayTwo');
-      		$table->integer('dayThree');
+      		$table->integer('day_one');
+      		$table->integer('day_two');
+      		$table->integer('day_three');
 			$table->timestamps();
 		});
 	}
