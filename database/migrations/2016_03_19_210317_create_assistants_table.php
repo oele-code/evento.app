@@ -17,11 +17,11 @@ class CreateAssistantsTable extends Migration {
 			$table->increments('id');
 			$table->integer('participant_id')->unsigned();
 			$table->foreign('participant_id')
-				  ->references('id')->on('participants')
-				  ->onDelete('cascade');
-			$table->integer('dayOne');
-			$table->integer('dayTwo');
-			$table->integer('dayThree');
+      		->references('id')->on('participants')
+      		->onDelete('cascade');
+      		$table->integer('dayOne');
+      		$table->integer('dayTwo');
+      		$table->integer('dayThree');
 			$table->timestamps();
 		});
 	}

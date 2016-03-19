@@ -17,9 +17,9 @@ class CreateCertificationsTable extends Migration {
 			$table->increments('id');
 			$table->integer('assistant_id')->unsigned();
 			$table->foreign('assistant_id')
-				  ->references('id')->on('assistants')
-				  ->onDelete('cascade');
-			$table->string('certificateCode');
+      		->references('id')->on('assistants')
+      		->onDelete('cascade');
+      		$table->string('certificateCode');
 			$table->timestamps();
 		});
 	}

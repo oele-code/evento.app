@@ -16,12 +16,11 @@ class CreateParticipantsTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('name');
-			$table->string('lasname');
-			$table->enum('documentType', ['CC', 'TI','CE']);
-			$table->string('document')->unique();
-			$table->string('email')->unique();
-			$table->string('phone');
-			$table->enum('userType', ['pro','est']);
+			$table->string('lastName');
+			$table->enum('documentType',['CC','TI','CE']);
+			$table->integer('document');
+			$table->string('email');
+			$table->enum('type',['pro','est']);
 			$table->timestamps();
 		});
 	}
