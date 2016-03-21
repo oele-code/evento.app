@@ -1,7 +1,7 @@
-<?php namespace App\Http\Requests;
+<?php namespace Evento\Http\Requests;
 
-use App\Http\Requests\Request;
-use App\Participant;
+use Evento\Http\Requests\Request;
+use Evento\Participant;
 
 class ParticipantRequest extends Request {
 

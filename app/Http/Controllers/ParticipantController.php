@@ -1,10 +1,10 @@
-<?php namespace App\Http\Controllers;
+<?php namespace Evento\Http\Controllers;
 
-use App\Http\Requests;
-use App\Http\Requests\ParticipantRequest;
+use Evento\Http\Requests;
+use Evento\Http\Requests\ParticipantRequest;
 
-use App\Http\Controllers\Controller;
-use App\Participant;
+use Evento\Http\Controllers\Controller;
+use Evento\Participant;
 
 use Illuminate\Http\Request;
 

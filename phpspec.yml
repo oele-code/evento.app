@@ -1,5 +1,5 @@
 suites:
     main:
-        namespace: App
-        psr4_prefix: App
+        namespace: Evento
+        psr4_prefix: Evento
         src_path: app

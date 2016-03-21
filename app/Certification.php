@@ -1,4 +1,4 @@
-<?php namespace App;
+<?php namespace Evento;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -1,4 +1,4 @@
-<?php namespace App\Commands;
+<?php namespace Evento\Commands;
 
 abstract class Command {
 
