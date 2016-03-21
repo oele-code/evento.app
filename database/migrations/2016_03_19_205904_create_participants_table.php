@@ -20,6 +20,7 @@ class CreateParticipantsTable extends Migration {
 			$table->enum('document_type',['CC','TI','CE']);
 			$table->integer('document');
 			$table->string('email');
+			$table->string('phone');
 			$table->enum('type',['PRO','EST']);
 			$table->timestamps();
 		});

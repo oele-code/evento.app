@@ -24,6 +24,7 @@ class ParticipantTableSeeder extends Seeder {
 				'document_type'	=>	$faker->randomElement(array('CC','TI','CE')),
 				'document'		=>	$faker->unique()->randomNumber(9),
 				'email'			=>	$faker->email(),
+				'phone'			=>	$faker->phoneNumber(),
 				'type'			=>	$faker->randomElement(array('PRO','EST')),
 			));
 		}
